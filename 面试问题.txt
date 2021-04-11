@@ -1,0 +1,2 @@
+1. https 加密过程
+2. mysql  binlog和redolog  预分配锁，半同步
