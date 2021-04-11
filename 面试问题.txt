@@ -6,3 +6,4 @@
 2. mysql  binlog和redolog undolog  预分配锁，半同步
 
     -锁 https://zhuanlan.zhihu.com/p/29150809/ 
+    - https://www.cnblogs.com/f-ck-need-u/archive/2018/05/08/9010872.html#auto_id_0
