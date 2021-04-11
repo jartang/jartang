@@ -3,6 +3,6 @@
     - 采用 对称加密和 非对称加密
 	- 对称加密算法加密数据+非对称加密算法交换密钥+数字证书验证身份
    
-2. mysql  binlog和redolog  预分配锁，半同步
+2. mysql  binlog和redolog undolog  预分配锁，半同步
 
     -锁 https://zhuanlan.zhihu.com/p/29150809/ 
