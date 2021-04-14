@@ -3,11 +3,12 @@
     - 采用 对称加密和 非对称加密
 	- 对称加密算法加密数据+非对称加密算法交换密钥+数字证书验证身份
    
-2. mysql  binlog和redolog undolog  意向锁，半复制同步
+2. mysql  binlog和redolog undolog  意向锁，
+   半同步复制 https://www.cnblogs.com/ivictor/p/5735580.html
 
-    -锁 https://zhuanlan.zhihu.com/p/29150809/ 
+    - 锁 https://zhuanlan.zhihu.com/p/29150809/ 
 
-    -log https://www.cnblogs.com/f-ck-need-u/archive/2018/05/08/9010872.html#auto_id_0
+    - log https://www.cnblogs.com/f-ck-need-u/archive/2018/05/08/9010872.html#auto_id_0
        - 事务日志：修改数据在内存的copy，把修改行为日志持久化到磁盘的事务日志中，追加操作，顺序操作，快的多
        - redolog 重做日志，提供前滚操作，物理日志，记录的是数据页的物理修改，只能恢复到最后一次提交的位置，
                   内存中的日志缓存，磁盘上的重做日志
@@ -15,6 +16,8 @@
 
        - undolog 回滚日志，提供回滚操作，一般是逻辑日志，根据每行记录进行记录
        - 二进制日志  二进制日志先于redo log被记录
+
+       B+ 页分裂，页合并
 
 
 
